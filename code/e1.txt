@@ -1,0 +1,5 @@
+2.a
+i) [[3,4],[3,4]] == [3,4]:([3,4]:[])
+ii) ([1] ++ []):[] == (1:[]):[]
+iii) Not possible, x must be [] so that it matches the first element of the concatenated left-hand side list [[] , … ]. However, by doing so the z variable is forced to be an element of the type [[a]]. As a result we may end up with this [ [[]] , [[]] ] which will never match the first element of the [[] , … ].
+iv) (1:(1:[])):[] == ((1:[]) ++ [1]):[]
